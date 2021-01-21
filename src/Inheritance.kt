@@ -3,6 +3,10 @@ open class Inheritance : Shape {
 
     }
 
+    override fun printShape() {
+        println("Inheritance")
+    }
+
     fun Add1() {
 
     }

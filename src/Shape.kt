@@ -1,7 +1,13 @@
 open class Shape {
 
+
+
     constructor() {
 
+    }
+
+   open fun printShape() {
+        println("Shape")
     }
 
 
