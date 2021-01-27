@@ -82,4 +82,25 @@ fun main(args: Array<String>) {
     }
 
 
+
+    println("======================================")
+
+    val list = ArrayList<String>()
+    list.add("HTML")
+    list.add("CSS")
+    list.add("JS")
+    list.add("Kotlin")
+
+    println(list.get(0))
+
+    list.removeAt(0)
+
+    println(list.get(0))
+
+
+    for (s in list) {
+        print(s + " ; ")
+    }
+
+
 }
