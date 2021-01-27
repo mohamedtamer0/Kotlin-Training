@@ -1,7 +1,7 @@
 fun main(args: Array<String>) {
 
-    var obj1 = A()
-    obj1.max(88, 6)
+//    var obj1 = a()
+//    obj1.max(88, 6)
 
 }
 

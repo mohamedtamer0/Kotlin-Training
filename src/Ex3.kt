@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
-    var obj1 = B()
-    obj1.WeekDays(2)
+//    var obj1 = b()
+//    obj1.WeekDays(2)
 }
 
 

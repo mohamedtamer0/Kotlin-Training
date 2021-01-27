@@ -1,0 +1,29 @@
+class HP : Thread {
+    constructor()
+   override fun run() {
+        for (i : Int in 0 until 5) {
+            println("HP")
+            Thread.sleep(1000)
+        }
+    }
+}
+
+class DELL : Thread{
+    constructor()
+  override  fun run() {
+        for (i : Int in 0 until 5) {
+            println("DELL")
+            Thread.sleep(1000)
+        }
+    }
+}
+
+
+
+fun main(args: Array<String>) {
+    var objH = HP()
+    var objD = DELL()
+    objH.start()
+    Thread.sleep(500)
+    objD.start()
+}
