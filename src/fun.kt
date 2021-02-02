@@ -6,5 +6,6 @@ fun sayHello(greeting:String, vararg itemsToGreet: String) {
 }
 
 fun main(args: Array<String>) {
-    sayHello("Hi", "Kotlin", "Java")
+    val arr = arrayOf("Kotlin", "Java")
+    sayHello("Hi", *arr )
 }
