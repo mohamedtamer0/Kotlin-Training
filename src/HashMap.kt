@@ -1,6 +1,12 @@
 fun main(args: Array<String>) {
 
 
+    val map = mapOf(1 to "a", 2 to "b", 3 to "c")
+    map.forEach { key, value -> println("$key -> $value") }
+
+
+
+
     var data1 = HashMap<String, String>()
 
     data1.put("user", "mohamed0")
