@@ -7,8 +7,17 @@ class PersonCL(val firstName: String = "Peter", val lastName:String="Parker") {
         println("the new nickName is $value")
     }
 
+    get() {
+        println("the returned value is $field")
+        return field
+    }
 
 
+
+
+    fun printinfo() {
+        println("$firstName ($nickName) $lastName")
+    }
 
 //    init {
 //        println("init 1")
@@ -30,6 +39,6 @@ fun main(args: Array<String>) {
     val per = PersonCL()
     per.lastName
     per.firstName
-    per.nickName = "Man"
-    per.nickName = "New NickName"
+    println(per.nickName)
+    per.printinfo()
 }
