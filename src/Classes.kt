@@ -1,3 +1,4 @@
+import kotlin.random.Random
 
 class Person2(var firstName: String, var lastName: String) {
     val fullName
@@ -48,12 +49,32 @@ fun main(args: Array<String>) {
 
     println(johan === homeOwner)
 
+    println("////////////////////////////////////")
+
     val impostorJohan = Person2(firstName = "Johan", lastName = "Appleseed")
 
     println(johan === homeOwner)
     println(johan === impostorJohan)
     println(impostorJohan === homeOwner)
 
+    println("////////////////////////////////////")
+
+    var imposters = (0..100).map {
+        Person2(firstName = "Johan", lastName = "Appleseed")
+    }
+
+    imposters.map {
+        it.firstName == "Johan" && it.lastName == "Appleseed"
+    }.contains(true)
+
+    println(imposters.contains(johan))
+
+    println("////////////////////////////////////")
+
+    val mutableImposters = mutableListOf<Person2>()
+    mutableImposters.addAll(imposters)
+    mutableImposters.contains(johan)
+    mutableImposters.add(Random.nextInt(5), johan)
 
 }
 
