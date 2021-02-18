@@ -46,6 +46,15 @@ fun main(args: Array<String>) {
     println(johan.firstName)
     println(homeOwner.firstName)
 
+    println(johan === homeOwner)
+
+    val impostorJohan = Person2(firstName = "Johan", lastName = "Appleseed")
+
+    println(johan === homeOwner)
+    println(johan === impostorJohan)
+    println(impostorJohan === homeOwner)
+
+
 }
 
 
