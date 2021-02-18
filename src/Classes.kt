@@ -1,4 +1,19 @@
 
+class Person2(var firstName: String, var lastName: String) {
+    val fullName
+    get() = "$firstName $lastName"
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 class InitOrderDemo(name: String) {
@@ -19,6 +34,18 @@ class InitOrderDemo(name: String) {
 
 fun main(args: Array<String>) {
     val cla = InitOrderDemo("Hello")
+
+    println("////////////////////////////////////")
+
+    val johan = Person2(firstName = "Johnny", lastName = "Appleseed")
+    println(johan.fullName)
+
+    var homeOwner = johan
+    johan.firstName = "Johan"
+
+    println(johan.firstName)
+    println(homeOwner.firstName)
+
 }
 
 
