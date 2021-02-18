@@ -1,3 +1,21 @@
+
+
+
+class InitOrderDemo(name: String) {
+    val firstProperty = "First property : $name".also(::println)
+}
+
+
+fun main(args: Array<String>) {
+    val cla = InitOrderDemo("Hello")
+}
+
+
+
+
+
+
+
 //class Car (val make: String, val model: String, var color: String) {
 //    fun accelerate() {
 //        println("vroom")
