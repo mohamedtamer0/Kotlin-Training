@@ -18,4 +18,78 @@ fun main(args: Array<String>) {
         f--
     }
 
+
+    println("/////////////////////////////////////////////////////////")
+
+
+
+    var myRange = 1..50
+
+    for (c in myRange) {
+        print(c)
+        print(",")
+    }
+
+    println()
+    println("////////////////////////////////////")
+
+    for (v in 20 downTo 1) {
+        print(v)
+        print(",")
+    }
+
+
+    println()
+    println("////////////////////////////////////")
+
+    for (d in 40 downTo 1 step 3 ) {
+        print(d)
+        print(",")
+    }
+    println()
+    println("////////////////////////////////////")
+
+    val myCities = listOf("cairo", "giza", "Mansoura")
+
+    for (city in myCities) {
+        print(city)
+        print(",")
+    }
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
