@@ -1,4 +1,4 @@
-import kotlin.random.Random
+import java.util.*
 
 class Person2(var firstName: String, var lastName: String) {
     val fullName
@@ -74,7 +74,7 @@ fun main(args: Array<String>) {
     val mutableImposters = mutableListOf<Person2>()
     mutableImposters.addAll(imposters)
     mutableImposters.contains(johan)
-    mutableImposters.add(Random.nextInt(5), johan)
+    mutableImposters.add(Random().nextInt(5), johan)
 
 }
 
