@@ -21,6 +21,8 @@ class Cat :Animal {
         println("Nmae Is : ${this.name}")
     }
 
+    constructor(s: String, s1: String)
+
     override fun play() {
         println("Cat Play ${this.name}")
     }
