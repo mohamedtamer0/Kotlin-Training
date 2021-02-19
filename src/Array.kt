@@ -102,6 +102,7 @@ fun main(args: Array<String>) {
         print(s + " ; ")
     }
 
+    println("======================================")
 
 
 

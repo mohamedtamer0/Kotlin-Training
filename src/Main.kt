@@ -43,17 +43,16 @@ fun main() {
 
 
 
+    val scoreNumResult = myScore.scoreResult()
+    println(scoreNumResult)
 
 
 
 
 
+}
 
-
-
-
-
-
-//    val interestingThings = arrayOf("Kotlin", "Java", "JS")
-//    sayHey("Hi" , *interestingThings)
+object myScore {
+    var scoreNums = arrayOf(20,40,33,89,90)
+    fun  scoreResult() = scoreNums.size
 }
