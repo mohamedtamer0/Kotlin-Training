@@ -28,6 +28,32 @@ fun main() {
 
 
 
+    val internalObject = object  {
+        var num1 = 22
+        var num2 = 44
+        var result = num1 + num2
+        fun mySum() {
+            println("Sum = + $result")
+        }
+    }
+
+    internalObject.mySum()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    val interestingThings = arrayOf("Kotlin", "Java", "JS")
 //    sayHey("Hi" , *interestingThings)
 }
