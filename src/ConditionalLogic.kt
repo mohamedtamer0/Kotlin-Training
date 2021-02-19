@@ -52,6 +52,20 @@ fun main(args: Array<String>) {
 
     vader("happy")
 
+    println("///////////////////////////////////")
+    val num1 = 10
+    val num2 = 20
+
+    val nums = if (num1 > num2) num1 else num2
+    println("the max number is $nums")
+
+
+    var index =0
+    for (v in 20.rangeTo(30).step(3)) {
+        println("${++index} - $v")
+    }
+
+
 
 
 }
