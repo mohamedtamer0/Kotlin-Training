@@ -1,6 +1,0 @@
-class Circle :Inheritance {
-
-    constructor() {
-
-    }
-}
